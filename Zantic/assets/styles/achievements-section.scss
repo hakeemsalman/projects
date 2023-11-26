@@ -1,0 +1,161 @@
+@import "./variables";
+@import "./mixins";
+
+.achievements-section {
+  @include flex(center, flex-start, 32px, row, nowrap);
+  margin: 0px auto;
+  max-width: $maxWidth;
+  padding: 80px 112px;
+  width: 100%;
+  min-width: $minWidth;
+
+  @include media-lg {
+    padding: 80px 40px;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  @include media-md {
+    padding: 80px 40px;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  @include media-sm {
+    flex-direction: column;
+    padding: 48px 20px;
+    gap: 48px;
+  }
+}
+
+.left-side {
+  @include flex(flex-start, center, 8px, column, nowrap);
+  width: 100%;
+  word-break: break-word;
+
+  h1 {
+    color: $neutral-900;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -1.2px;
+  }
+  p {
+    color: $neutral-900;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.55; 
+  }
+
+  @include media-lg {
+    h1 {
+      font-size: 2.25em;
+      letter-spacing: -0.9px;
+    }
+  }
+
+  @include media-md {
+    h1 {
+      font-size: 2.25em;
+      letter-spacing: -0.9px;
+    }
+  }
+
+  @include media-sm {
+    h1 {
+      font-size: 1.875em;
+      letter-spacing: -1.2px;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+.as-right-side {
+  @include grid(1fr, repeat(2, 1fr), (40px 32px));
+  width: 100%;
+  word-break: break-word;
+
+  @include media-lg {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @include media-md {
+    @include flex(flex-start, flex-start, 24px, row, wrap);
+    width: 100%;
+  }
+
+  @include media-sm {
+    @include flex(flex-start, flex-start, 24px, row, wrap);
+    width: 100%;
+  }
+}
+
+.achieve-section {
+  @include flex(center, flex-start, 16px, row, nowrap);
+  width: 280px;
+
+  .img {
+    @include flex(center, center, 10px, row, nowrap);
+    padding: 8px;
+  }
+
+  @include media-lg {
+    width: 328px;
+  }
+
+  @include media-md {
+    width: 328px;
+  }
+
+  @include media-sm {
+    width: 50%;
+  }
+}
+
+.achieve-details {
+  @include flex(flex-start, center, 0px, column, nowrap);
+
+  h1 {
+    color: $neutral-900;
+    font-size: 2.25em;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.9px;
+  }
+
+  p {
+    color: $neutral-900;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  @include media-lg {
+    h1 {
+      font-size: 1.875em;
+      line-height: 1.33;
+    }
+  }
+
+  @include media-md {
+    h1 {
+      font-size: 1.875em;
+      line-height: 1.33;
+    }
+  }
+
+  @include media-sm {
+    h1 {
+      font-size: 1.5em;
+      line-height: 1.33;
+    }
+
+    p {
+      font-size: 0.875em;
+      line-height: 1.42;
+    }
+  }
+}

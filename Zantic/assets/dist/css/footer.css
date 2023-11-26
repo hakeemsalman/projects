@@ -1,0 +1,136 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0px auto;
+  min-width: 375px;
+  background: #000000;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .footer {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.f-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 64px 112px;
+  width: 100%;
+  max-width: 1440px;
+}
+.f-div .left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.f-div .right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  word-break: break-word;
+}
+.f-div .right h3 {
+  color: #d1d5db;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.55;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .f-div .right {
+    color: #d1d5db;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .f-div .right {
+    color: #d1d5db;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .f-div {
+    padding: 64px 40px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .f-div {
+    padding: 64px 40px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .f-div {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.downloads-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.downloads-menu .downloads-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.downloads-menu .footer-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .downloads-menu .footer-menu ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+}
+
+.copyright {
+  color: #d1d5db;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.42;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,67 @@
+@use "sass:math";
+@import "./variables";
+@import "./mixins";
+
+.background {
+  overflow-x: clip;
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0px auto;
+  @include position(absolute, 0);
+  top: 0;
+}
+
+.bg-cover {
+  @include position(relative, -1);
+  width: 100%;
+  height: 752px;
+  transform-origin: left bottom;
+  transform: skew(0, -7.13deg);
+  background: $backgroundCoverColor;
+  @include media-xl{
+    height: 955px;
+  }
+}
+
+.bg-left-one {
+  @include position(absolute, -1);
+  bottom: 0px;
+  width: math.div(100vw,3.33);
+  height: 65px;
+  background: $secondary-300;
+}
+
+.bg-left-two {
+  @include position(relative, -1);
+  bottom: -65px;
+  width: 65%;
+  height: 65px;
+  background: $primary-100;
+}
+
+.bg-right-one {
+  @include position(absolute, -1);
+  width: math.div(100vw,2.24);
+  height: 65px;
+  background: $primary-300;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bg-right-three {
+  @include position(absolute, -1);
+  bottom: -65px;
+  right: 0px;
+  width: 28%;
+  height: 65px;
+  background: $secondary-300;
+}
+
+.bg-right-two{
+  @include position(absolute, -1);
+  right: 5%;
+  bottom: 65px;
+  width: 68%;
+  height: 65px;
+  background: $primary-100;
+}

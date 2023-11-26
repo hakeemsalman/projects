@@ -1,0 +1,26 @@
+.left-section {
+  padding: 25px 0px;
+  gap: 15px;
+  width: 22%;
+}
+
+.left-section .side-link {
+  font-weight: 600;
+  width: 100%;
+  padding: 10px 0px 10px 30px;
+  border: none;
+  background: none;
+  gap: 8px;
+  opacity: 0.5;
+}
+
+.left-section .side-link.c-active {
+  opacity: 1;
+  border-left: 3px solid #007EDF;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.left-section .side-link .icon {
+  width: 15px;
+  height: 15px;
+}

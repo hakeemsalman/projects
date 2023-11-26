@@ -1,0 +1,71 @@
+nav {
+  padding: 12px 18px;
+  background: #FFF;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+  position: relative;
+  z-index: 1;
+}
+
+nav .page-title {
+  gap: 19px;
+}
+
+nav .logo {
+  width: 114px;
+  height: 25px;
+}
+
+nav .title {
+  color: #797775;
+  font-size: 1.313rem;
+  font-weight: 600;
+}
+
+nav .divider {
+  background: #808080;
+  width: 1px;
+  height: 100%;
+}
+
+nav .nav-link {
+  gap: 20px;
+}
+
+nav .help {
+  gap: 14px;
+}
+
+nav .help .feedback {
+  color: var(--bs-black);
+  font-size: 0.75rem;
+  opacity: 0.55;
+}
+
+nav .help .help-icon {
+  border: none;
+  background: none;
+}
+
+nav .user-info {
+  gap: 20px;
+}
+
+nav .user-control {
+  gap: 20px;
+}
+
+nav .name-plaque span:first-child {
+  font-size: 0.813rem;
+  font-weight: 600;
+}
+
+nav .name-plaque span:last-child {
+  font-size: 0.688rem;
+  opacity: 0.6;
+}
+
+nav .dropdown-icon {
+  width: 9.75px;
+  fill: #000;
+  opacity: 0.6;
+}

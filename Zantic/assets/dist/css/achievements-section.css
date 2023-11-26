@@ -1,0 +1,194 @@
+.achievements-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0px auto;
+  max-width: 1440px;
+  padding: 80px 112px;
+  width: 100%;
+  min-width: 375px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .achievements-section {
+    padding: 80px 40px;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .achievements-section {
+    padding: 80px 40px;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .achievements-section {
+    flex-direction: column;
+    padding: 48px 20px;
+    gap: 48px;
+  }
+}
+
+.left-side {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  word-break: break-word;
+}
+.left-side h1 {
+  color: #111827;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -1.2px;
+}
+.left-side p {
+  color: #111827;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.55;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .left-side h1 {
+    font-size: 2.25em;
+    letter-spacing: -0.9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .left-side h1 {
+    font-size: 2.25em;
+    letter-spacing: -0.9px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .left-side h1 {
+    font-size: 1.875em;
+    letter-spacing: -1.2px;
+  }
+  .left-side p {
+    font-size: 1em;
+  }
+}
+
+.as-right-side {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 40px 32px;
+  width: 100%;
+  word-break: break-word;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .as-right-side {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .as-right-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .as-right-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.achieve-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 280px;
+}
+.achieve-section .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 8px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .achieve-section {
+    width: 328px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .achieve-section {
+    width: 328px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .achieve-section {
+    width: 50%;
+  }
+}
+
+.achieve-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.achieve-details h1 {
+  color: #111827;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.9px;
+}
+.achieve-details p {
+  color: #111827;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .achieve-details h1 {
+    font-size: 1.875em;
+    line-height: 1.33;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .achieve-details h1 {
+    font-size: 1.875em;
+    line-height: 1.33;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .achieve-details h1 {
+    font-size: 1.5em;
+    line-height: 1.33;
+  }
+  .achieve-details p {
+    font-size: 0.875em;
+    line-height: 1.42;
+  }
+}/*# sourceMappingURL=achievements-section.css.map */

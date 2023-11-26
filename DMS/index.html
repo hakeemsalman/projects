@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/navbar.css">
+  <link rel="stylesheet" href="./assets/styles/left-menu.css">
+  <link rel="stylesheet" href="./assets/styles/content.css">
+  <link rel="stylesheet" href="./assets/styles/modal/modal-detail.css">
+  <link rel="stylesheet" href="./assets/styles/modal/modal-spec.css">
+  <link rel="stylesheet" href="./assets/styles/modal/modal.css">
+  <title>DMS - Demo Management System</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column">
+
+    <!-- NAVBAR   -->
+    <nav class="d-flex justify-content-between">
+      <div class="page-title d-flex align-items-center">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+        <div class="divider"></div>
+        <span class="title">Demo Management System</span>
+      </div>
+      <div class="nav-link d-flex align-items-center">
+        <div class="help d-flex align-items-center">
+          <span class="feedback">Submit Feedback</span>
+          <button class="help-icon">
+            <img src="./assets/images/help-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="user-info d-flex align-items-center">
+          <div class="avatar">
+            <img src="./assets/images/avatar.svg" alt="">
+          </div>
+          <div class="user-control d-flex align-items-center">
+            <div class="name-plaque d-flex flex-column align-items-start">
+              <span>Evelyn Humphries</span>
+              <span>Multiple Partners</span>
+            </div>
+            <div class="dropdown-icon d-flex">
+              <img src="./assets/images/dropdown.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex">
+      <!-- LEFT MENU -->
+      <section class="left-section d-inline-flex flex-column align-items-center flex-shrink-0">
+        <button class="side-link d-flex align-items-center ">
+          <div class="icon d-flex">
+            <img src="./assets/images/folder.svg" alt="">
+          </div>
+          <span class="link-name">Overview</span>
+        </button>
+        <button class="side-link d-flex align-items-center">
+          <div class="icon d-flex">
+            <img src="./assets/images/folder.svg" alt="">
+          </div>
+          <span class="link-name">Projects</span>
+        </button>
+        <button class="side-link d-flex align-items-center">
+          <div class="icon d-flex">
+            <img src="./assets/images/play.svg" alt="">
+          </div>
+          <span class="link-name">Attract Loop</span>
+        </button>
+        <button class="side-link d-flex align-items-center c-active">
+          <div class="icon d-flex">
+            <img src="./assets/images/tag.svg" alt="">
+          </div>
+          <span class="link-name">RDX Fact Tag</span>
+        </button>
+        <button class="side-link d-flex align-items-center">
+          <div class="icon d-flex">
+            <img src="./assets/images/upload.svg" alt="">
+          </div>
+          <span class="link-name">File Upload</span>
+        </button>
+      </section>
+      <!-- MAIN CONTENT -->
+      <section class="content">
+        <div class="heading d-flex flex-column align-items-start">
+          <span class="title">RDX Fact Tag</span>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn d-flex c-btn-comp align-items-center" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          <span class="icons d-flex">
+            <img src="./assets/images/plus.svg" alt="">
+          </span>
+          <span class="name">Create new RDX Fact Tag</span>
+        </button>
+        <div class="table-responsiv">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="col-3">Name</th>
+                <th class="col-3">RAC</th>
+                <th class="col-3">Store ID</th>
+                <th class="col-3">Last Updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn 1" onclick="toggleDropdown('dropdown1')"><img class="one"
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown1">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown1')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown1')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown1')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('dropdown2')"><img
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown2">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown2')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown2')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown2')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('dropdown3')"><img
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown3">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown3')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown3')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown3')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('dropdown4')"><img
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown4">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown4')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown4')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown4')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('dropdown5')"><img
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown5">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown5')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown5')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown5')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('dropdown6')"><img
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown6">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown6')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown6')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown6')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>DFT</td>
+                <td>ContosoDemo</td>
+                <td>10001, 10005</td>
+                <td><span>18 Apr 2023, 09:09:41</span>
+                  <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('dropdown7')"><img
+                        src="./assets/images/options-icon.svg" alt=""></button>
+                    <div class="dropdown-content" id="dropdown7">
+                      <a href="#" onclick="selectOption('Option 1', 'dropdown7')">Edit</a>
+                      <a href="#" onclick="selectOption('Option 2', 'dropdown7')">Download</a>
+                      <a href="#" onclick="selectOption('Option 3', 'dropdown7')">Upload FT Data</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- MODAL -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form class="form-section" onsubmit="event.preventDefault();">
+                <div class="create-section d-flex flex-column align-items-start justify-content-between">
+                  <div class="info-section">
+                    <div class="title-page">
+                      <h2 class="title">Create new RDX Fact Tag</h2>
+                      <p class="description">Enter a name for your Fact Tag and configure your details.</p>
+                    </div>
+                    <div class="tab-section">
+                      <button id="details" type="button" class="side-link tab-link d-flex align-items-center c-active">
+                        Details
+                      </button>
+                      <button id="spec" type="button" class="side-link tab-link text-start align-items-center hide">
+                        Specifications
+                      </button>
+                    </div>
+                  </div>
+                  <div class="save-section">
+                    <button type="Submit" onclick="handleSubmit()" class="btn create-btn">Create</button>
+                    <button type="Cancel" class="btn cancel-btn" data-bs-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+                <div class="tab-content-section">
+                  <div class="detail-section hide">
+                    <div class="detail-info">
+                      <span>Details</span>
+                      <div class="divider"></div>
+                      <div class="customer-info">
+                        <label for="name">Name <span>This is only visible in the file lists and will not be seen by
+                            customers</span></label>
+                        <input type="text" id="name" value="retailer.skulist">
+                      </div>
+                      <div class="brand-info">
+                        <label for="brand">Brand</label>
+                        <input type="text" id="brand" value="Contoso">
+                      </div>
+                      <div class="retail-info">
+                        <label class="" for="rac">Retail Access Code (RAC)</label>
+                        <input type="text" id="rac" placeholder="Search or select RAC">
+                        <div class="option-box">
+                          <label for="retail-selectall">
+                            <input type="checkbox" name="" id="retail-selectall"
+                              onclick="handleRetailCheckAll(this)">Select
+                            all <span>(6/10)</span>
+                          </label>
+                          <div class="divider"></div>
+                          <label for="ContosoUS">
+                            <input type="checkbox" name="ContosoUS" id="ContosoUS" class="retail-checkbox"
+                              onclick="handleRetailCheckBox()">ContosoUS
+                          </label>
+                          <label for="Contoso">
+                            <input type="checkbox" name="Contoso" id="Contoso" class="retail-checkbox"
+                              onclick="handleRetailCheckBox()">Contoso
+                          </label>
+                          <label for="Conto">
+                            <input type="checkbox" name="Conto" id="Conto" class="retail-checkbox"
+                              onclick="handleRetailCheckBox()">Conto
+                          </label>
+                          <label for="ConUS">
+                            <input type="checkbox" name="ConUS" id="ConUS" class="retail-checkbox"
+                              onclick="handleRetailCheckBox()">ConUS
+                          </label>
+                        </div>
+                      </div>
+                      <div class="store-info">
+                        <label class="" for="rac">Store ID</label>
+                        <div class="option-box">
+                          <label for="store-selectall">
+                            <input type="checkbox" name="" id="store-selectall"
+                              onclick="handleStoreCheckAll(this)">Select
+                            all <span>(6/10)</span>
+                          </label>
+                          <div class="divider"></div>
+                          <div class="selection-box">
+                            <label for="s-ContosoUS">
+                              <input type="checkbox" name="s-ContosoUS" id="s-ContosoUS" class="store-checkbox"
+                                onclick="handleStoreCheckBox()">ContosoUS<span>&ndash;
+                                Bellevue,
+                                Washington</span>
+                            </label>
+                            <label for="s-Contoso">
+                              <input type="checkbox" name="s-Contoso" id="s-Contoso" class="store-checkbox"
+                                onclick="handleStoreCheckBox()">Contoso<span>&ndash; Bellevue,
+                                Washington</span>
+                            </label>
+                            <label for="s-Conto">
+                              <input type="checkbox" name="s-Conto" id="s-Conto" class="store-checkbox"
+                                onclick="handleStoreCheckBox()">Conto<span>&ndash; Bellevue,
+                                Washington</span>
+                            </label>
+                            <label for="s-ConUS">
+                              <input type="checkbox" name="s-ConUS" id="s-ConUS" class="store-checkbox"
+                                onclick="handleStoreCheckBox()">ConUS<span>&ndash; Bellevue,
+                                Washington</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="region-info">
+                        <label class="" for="rac">Region</label>
+                        <input type="text" value="Search or select">
+                      </div>
+                      <div class="divider"></div>
+                      <div class="data-info">
+                        <label for="">Data source <span>Select whether to automatically detect values from the device
+                            or pull data from an uploaded SKU list</span></label>
+                        <div class="data-btn">
+                          <label for="auto">
+                            <input type="radio" name="source" id="auto" checked>Detected values
+                          </label>
+                          <label for="custom">
+                            <input type="radio" name="source" id="custom">Custom
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="specification-section">
+                    <div class="spec-info">
+                      <span class="title">DFT Layout</span>
+                      <div class="divider"></div>
+                      <div class="description">
+                        <span class="heading">Specifications Visibility & Sources</span>
+                        <span class="subtitle">Control the specifications on DFT Layout</span>
+                      </div>
+                      <div class="box">
+                        <div class="box-headers">
+                          <span>Specifications</span>
+                          <span>Data Source</span>
+                        </div>
+                        <div class="box-content">
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU" id="SKU">
+                              <label for="SKU">SKU</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked">Retailer</button>
+                              <button id="detected" type="button" class="source-btn">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="OEM" id="OEM">
+                              <label for="OEM">OEM</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked">Retailer</button>
+                              <button id="detected" type="button" class="source-btn">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Model" id="Model">
+                              <label for="Model">Model</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked">Retailer</button>
+                              <button id="detected" type="button" class="source-btn">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Processor" id="Processor">
+                              <label for="Processor">Processor</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Graphics" id="Graphics">
+                              <label for="Graphics">Graphics</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Memory" id="Memory">
+                              <label for="Memory">Memory</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Storage" id="Storage">
+                              <label for="Storage">Storage</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Screen" id="Screen">
+                              <label for="Screen">Screen</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Camera" id="Camera">
+                              <label for="Camera">Camera</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Battery" id="Battery">
+                              <label for="Battery">Battery</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Wireless" id="Wireless">
+                              <label for="Wireless">Wireless</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Biometric" id="Biometric">
+                              <label for="Biometric">Biometric</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Pen" id="Pen">
+                              <label for="Pen">Pen</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn ">Retailer</button>
+                              <button id="detected" type="button" class="source-btn checked">Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Operating System" id="Operating System">
+                              <label for="Operating System">Operating System</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 1" id="SKU Family 1">
+                              <label for="SKU Family 1">SKU Family 1</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 2" id="SKU Family 2">
+                              <label for="SKU Family 2">SKU Family 2</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 3" id="SKU Family 3">
+                              <label for="SKU Family 3">SKU Family 3</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 4" id="SKU Family 4">
+                              <label for="SKU Family 4">SKU Family 4</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 4" id="SKU Family 4">
+                              <label for="SKU Family 4">SKU Family 4</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 4" id="SKU Family 4">
+                              <label for="SKU Family 4">SKU Family 4</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="Ports" id="Ports">
+                              <label for="Ports">Ports</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked">Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                          <div class="content-row">
+                            <div class="left-content">
+                              <input type="checkbox" name="SKU Family 4" id="SKU Family 4">
+                              <label for="SKU Family 4">SKU Family 4</label>
+                            </div>
+                            <div class="right-content">
+                              <button id="retailer" type="button" class="source-btn checked" disabled>Retailer</button>
+                              <button id="detected" type="button" class="source-btn" disabled>Detected</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="benefits-section">
+                        <button class="add-benefit" type="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path
+                              d="M10.8337 10.7817H10.7837V10.8317V14.9984C10.7837 15.2061 10.7011 15.4054 10.5542 15.5523C10.4073 15.6992 10.2081 15.7817 10.0003 15.7817C9.79257 15.7817 9.59333 15.6992 9.44643 15.5523C9.29952 15.4054 9.21699 15.2061 9.21699 14.9984V10.8317V10.7817H9.16699H5.00033C4.79257 10.7817 4.59333 10.6992 4.44643 10.5523C4.29952 10.4054 4.21699 10.2061 4.21699 9.99837C4.21699 9.79062 4.29952 9.59138 4.44643 9.44447C4.59333 9.29757 4.79257 9.21504 5.00033 9.21504H9.16699H9.21699V9.16504V4.99837C9.21699 4.79062 9.29952 4.59138 9.44643 4.44447C9.59333 4.29757 9.79257 4.21504 10.0003 4.21504C10.2081 4.21504 10.4073 4.29757 10.5542 4.44447C10.7011 4.59138 10.7837 4.79062 10.7837 4.99837V9.16504V9.21504H10.8337H15.0003C15.2081 9.21504 15.4073 9.29757 15.5542 9.44447C15.7011 9.59138 15.7837 9.79062 15.7837 9.99837C15.7837 10.2061 15.7011 10.4054 15.5542 10.5523C15.4073 10.6992 15.2081 10.7817 15.0003 10.7817H10.8337Z"
+                              fill="black" stroke="white" stroke-width="0.1" />
+                          </svg>
+                        </button>
+                        <div class="benefit-title">
+                          <span>Feature Benefit</span>
+                          <span>2 more feature benefits can be added</span>
+                        </div>
+                      </div>
+                      <div class="currency-section">
+                        <label for="currency">Currency</label>
+                        <select id="currency" name="currency" class="custom-selelct">
+                          <option value="usd" selected>USD</option>
+                          <option value="eur">EUR</option>
+                          <option value="gbp">GBP</option>
+                          <!-- Add more currency options as needed -->
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+@import "./variables";
+@import "./mixins";
+
+header {
+  @include flex(center, center, 0px, row, nowrap);
+  margin: 0px auto;
+  min-width: $minWidth;
+}
+
+.header-div {
+  @include flex(center, center, 0px, column, nowrap);
+  width: 100%;
+  max-width: $maxWidth;
+  @include position(relative, 0);
+  min-width: $minWidth;
+  padding: 20px 112px 74px;
+
+  &::after {
+    content: "";
+    @include position(absolute, -1);
+    border-radius: 406px;
+    opacity: 0.6;
+    background: $primary-600;
+    width: 28%;
+    height: 28%;
+    min-width: 106px;
+    filter: blur(141px);
+    text-align: right;
+    top: -32px;
+    right: -32px;
+  }
+
+  @include media-lg {
+    padding: 20px 40px 0px;
+  }
+
+  @include media-md {
+    padding: 20px 40px 0px;
+  }
+
+  @include media-sm {
+    padding: 16px 20px;
+  }
+
+  @include custom-media-up($maxWidth) {
+    overflow: hidden;
+  }
+}
+
+.mobile-menu-icon {
+  @include flex(center, center, 0px, row, nowrap);
+  padding: 8px;
+}
+
+nav.desktop {
+  @include flex(center, space-between, 0px, row, nowrap);
+  width: 100%;
+  max-width: 1216px;
+  margin: 0px auto;
+
+  @include media-lg {
+    display: none;
+  }
+
+  @include media-md {
+    display: none;
+  }
+
+  @include media-sm {
+    display: none;
+  }
+}
+
+.nav-menu-bar {
+  @include flex(center, center, 32px, row, nowrap);
+  word-break: break-word;
+
+  .logo {
+    width: 138px;
+    height: 32px;
+  }
+}
+
+.nav-menu {
+  > ul {
+    @include flex(center, center, 8px, row, nowrap);
+    color: $neutral-900;
+    font-size: 0.875em;
+    font-weight: 600;
+    line-height: 1.42;
+  }
+}
+
+.nav-apps {
+  @include flex(center, center, 12px, row, nowrap);
+}
+
+.nav-menu.mobile {
+  @include media-sm {
+    display: none;
+  }
+}
+
+.header-section {
+  @include flex(flex-start, center, 32px, row, nowrap);
+  margin-top: 72px;
+
+  @include media-xl {
+    flex-wrap: wrap;
+  }
+
+  @include media-lg {
+    @include flex(center, center, 80px, column, nowrap);
+    padding: 80px 0px;
+    margin-top: 0px;
+  }
+  @include media-md {
+    @include flex(center, center, 80px, column, nowrap);
+    padding: 80px 0px;
+    margin-top: 0px;
+  }
+
+  @include media-sm {
+    display: inline-flex;
+    @include flex(center, center, 40px, column, nowrap);
+    width: 100%;
+    min-width: 335px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+  }
+}
+
+.header-content {
+  @include flex(flex-start, center, 32px, column, nowrap);
+  padding: 96px 48px 0px 0px;
+  max-width: 696px;
+  word-break: break-word;
+
+  @include media-lg {
+    padding: 0px;
+    max-width: fit-content;
+  }
+
+  @include media-md {
+    padding: 0px;
+    max-width: fit-content;
+  }
+
+  @include media-sm {
+    padding: 40px 0px;
+  }
+}
+
+.header-content-description {
+  @include flex(flex-start, center, 16px, column, nowrap);
+  word-break: break-word;
+
+  h1 {
+    color: $neutral-900;
+    font-size: 3.75em;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+  }
+
+  p {
+    color: $neutral-700;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  @include media-lg {
+    h1 {
+      font-size: 3em;
+      line-height: 1.25;
+      letter-spacing: -1.2px;
+    }
+
+    p {
+      font-size: 1.125em;
+      line-height: 1.55;
+    }
+  }
+
+  @include media-md {
+    h1 {
+      font-size: 3em;
+      line-height: 1.25;
+      letter-spacing: -1.2px;
+    }
+
+    p {
+      font-size: 1.125em;
+      line-height: 1.55;
+    }
+  }
+
+  @include media-sm {
+    align-self: stretch;
+
+    h1 {
+      font-size: 2.25em;
+      line-height: 1.25;
+      letter-spacing: -0.9px;
+    }
+    p {
+      font-size: 1.125em;
+      line-height: 1.55;
+    }
+  }
+}
+
+.mobile {
+  display: none;
+
+  @include media-sm {
+    @include flex(center, space-between, 0px, row, nowrap);
+    width: 100%;
+  }
+}
+
+.tablet {
+  display: none;
+
+  @include media-lg {
+    @include flex(center, space-between, 0px, row, nowrap);
+    width: 100%;
+
+    .right-side {
+      @include flex(center, center, 12px, row, nowrap);
+      .badges {
+        @include flex(center, center, 16px, row, nowrap);
+      }
+    }
+  }
+
+  @include media-md {
+    @include flex(center, space-between, 0px, row, nowrap);
+    width: 100%;
+
+    .right-side {
+      @include flex(center, center, 12px, row, nowrap);
+      .badges {
+        @include flex(center, center, 16px, row, nowrap);
+      }
+    }
+  }
+}
+
+.nav-menu-mobile {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: $black;
+
+  ul {
+    @include flex(center, center, 0px, column, nowrap);
+
+    li {
+      @include flex(center, center, 0px, column, nowrap);
+      border-bottom: 1px solid $black;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.header-buttons {
+  @include flex(center, flex-start, 16px, row, wrap);
+
+  .btn {
+    flex: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: $primary-600;
+    color: $white;
+    border: none;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    font-feature-settings: "liga" off;
+  }
+}
+
+.watch-btn {
+  padding: 16px 24px;
+
+  a {
+    @include flex(center, center, 8px, row, nowrap);
+  }
+
+  span {
+    color: $primary-600;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+
+.header-mobile {
+  @include flex(center, center, 0px, column, nowrap);
+  @include position(relative, 0);
+  padding: 0px 84px;
+
+  img:first-child {
+    @include position(relative, 0);
+  }
+
+  img:last-child {
+    box-shadow: 0px 24px 48px 10px rgba(17, 24, 39, 0.25);
+    @include position(absolute, -1);
+  }
+
+  @include media-sm {
+    padding: 0px 7px 0px 8px;
+    img {
+      width: inherit;
+    }
+  }
+}
+
+.nav-menu-mobile {
+  @include media-gt-lg {
+    display: none;
+  }
+}

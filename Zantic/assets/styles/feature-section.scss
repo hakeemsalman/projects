@@ -1,0 +1,131 @@
+@import "./variables";
+@import "./mixins";
+
+.features-section {
+  @include flex(center, center, 64px, column, nowrap);
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 96px 112px;
+
+  @include media-lg {
+    padding: 80px 40px;
+  }
+  @include media-md {
+    padding: 80px 40px;
+  }
+
+  @include media-sm {
+    min-width: $minWidth;
+    padding: 48px 20px;
+    gap: 48px;
+  }
+}
+
+.features-header {
+  @include flex(center, center, 8px, column, nowrap);
+  max-width: 800px;
+  word-break: break-word;
+
+  h1 {
+    color: $neutral-900;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.9px;
+  }
+
+  p {
+    color: $neutral-900;
+    text-align: center;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  @include media-lg {
+    h1 {
+      font-size: 2.25em;
+    }
+  }
+
+  @include media-md {
+    h1 {
+      font-size: 2.25em;
+    }
+  }
+
+  @include media-sm {
+    h1 {
+      font-size: 2.25em;
+    }
+  }
+}
+
+.features-list {
+  @include flex(center, center, (64px 30px), row, wrap);
+
+  @include media-sm {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+.features-list-single {
+  @include flex(center, center, 24px, column, nowrap);
+  max-width: 384px;
+  word-break: break-word;
+
+  @include media-lg {
+    max-width: 329px;
+  }
+
+  @include media-md {
+    max-width: 329px;
+  }
+
+  @include media-sm {
+    max-width: 329px;
+  }
+}
+
+.features-list-content {
+  @include flex(center, center, 8px, column, nowrap);
+  padding: 0px 16px;
+
+  h1 {
+    color: $neutral-900;
+    text-align: center;
+    font-size: 1.875em;
+    font-weight: 700;
+    line-height: 1.33;
+  }
+
+  p {
+    color: $neutral-700;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  @include media-lg {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  @include media-md {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  @include media-sm {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+}

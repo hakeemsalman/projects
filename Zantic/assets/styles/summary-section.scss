@@ -1,0 +1,159 @@
+@import "./variables";
+@import "./mixins";
+
+.summary-section {
+  min-width: $minWidth;
+  background: $secondary-600;
+  padding: 0px 112px;
+  @include flex(center, center, 0px, row, nowrap);
+
+  > .ss-div {
+    @include flex(center, center, 32px, row, nowrap);
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1440px;
+
+    @include media-lg {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include media-md {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include media-sm {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include media-lg {
+    padding: 80px 40px 0px 40px;
+    gap: 48px;
+  }
+
+  @include media-md {
+    padding: 80px 40px 0px 40px;
+    gap: 48px;
+  }
+
+  @include media-sm {
+    padding: 48px 20px 0px 20px;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.summary-left {
+  @include flex(flex-start, center, 48px, column, nowrap);
+  word-break: break-word;
+
+  .title {
+    @include flex(flex-start, center, 8px, column, nowrap);
+    width: 100%;
+    max-width: 592px;
+
+    h1 {
+      color: $neutral-900;
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -1.2px;
+    }
+
+    p {
+      color: $neutral-900;
+      font-size: 1.125em;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    @include media-lg {
+      align-self: stretch;
+      max-width: inherit;
+
+      h1 {
+        font-size: 2.25em;
+        line-height: 1.25;
+        letter-spacing: -0.9px;
+      }
+    }
+
+    @include media-md {
+      align-self: stretch;
+      max-width: inherit;
+
+      h1 {
+        font-size: 2.25em;
+        line-height: 1.25;
+        letter-spacing: -0.9px;
+      }
+    }
+
+    @include media-sm {
+      h1 {
+        font-size: 1.875em;
+        line-height: 1.33;
+        letter-spacing: 0px;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  @include media-lg {
+    align-self: stretch;
+  }
+
+  @include media-md {
+    align-self: stretch;
+  }
+}
+
+.title-buttons {
+  @include flex(flex-start, center, 8px, column, nowrap);
+
+  p {
+    color: $neutral-900;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+
+  .store-buttons {
+    @include flex(flex-start, center, 12px, row, nowrap);
+  }
+}
+
+.summary-right {
+  @include flex(flex-start, center, 79px, row, nowrap);
+  width: 100%;
+  max-width: 592px;
+  @include summaryPhoneOne(48);
+  @include summaryPhoneTwo(174px, 48px);
+
+  @include media-lg {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @include media-md {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @include media-sm {
+    padding: 0px 51px 0px 52px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @include summaryPhoneOne(0px);
+    @include summaryPhoneTwo(0px, 0px);
+  }
+}

@@ -1,0 +1,278 @@
+.integrations-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0px auto;
+  min-width: 375px;
+  max-width: 1440px;
+  padding: 80px 112px;
+}
+.integrations-section > .is-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #e5e7eb;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .integrations-section > .is-div {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .integrations-section > .is-div {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .integrations-section > .is-div {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .integrations-section {
+    padding: 80px 40px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .integrations-section {
+    padding: 80px 40px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .integrations-section {
+    padding: 40px 20px;
+    align-items: center;
+  }
+}
+
+.integrations-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 488px;
+  padding: 40px 0px;
+  word-break: break-word;
+}
+.integrations-content h1 {
+  color: #111827;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -1.2px;
+}
+.integrations-content p {
+  color: #111827;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.55;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .integrations-content {
+    width: 328px;
+    padding: 20px 0px;
+  }
+  .integrations-content h1 {
+    font-size: 2.25em;
+    letter-spacing: -0.9px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .integrations-content {
+    width: 328px;
+    padding: 20px 0px;
+  }
+  .integrations-content h1 {
+    font-size: 2.25em;
+    letter-spacing: -0.9px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .integrations-content {
+    width: auto;
+    padding: 20px 0px;
+  }
+  .integrations-content h1 {
+    font-size: 1.875em;
+    line-height: 1.33;
+  }
+  .integrations-content p {
+    font-size: 1.125em;
+    line-height: 1.55;
+  }
+}
+
+.integrations-box {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0px 78px;
+}
+.integrations-box .vector-background {
+  width: 540px;
+  flex-shrink: 1;
+}
+.integrations-box .vector-background img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .integrations-box {
+    padding: 0px;
+    width: 328px;
+  }
+  .integrations-box .vector-background {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .integrations-box {
+    padding: 0px;
+    width: 328px;
+  }
+  .integrations-box .vector-background {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .integrations-box {
+    max-width: 335px;
+    position: relative;
+    padding: 0px;
+  }
+  .integrations-box .vector-background {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.integrations-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  z-index: 0;
+  padding: 40px 0px 38px;
+}
+.integrations-logos .row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.integrations-logos .row-1 .logo-div {
+  max-width: 64px;
+  max-height: 64px;
+}
+.integrations-logos .row-1 .logo-div img {
+  width: 100%;
+}
+.integrations-logos .row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.integrations-logos .row-2 .logo-div {
+  max-width: 64px;
+  max-height: 64px;
+}
+.integrations-logos .row-2 .logo-div img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .integrations-logos {
+    padding: 24px 28px 23px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    gap: 39px;
+  }
+  .integrations-logos .row-1,
+  .integrations-logos .row-2 {
+    gap: 39px;
+  }
+  .integrations-logos .row-1 .logo-div,
+  .integrations-logos .row-2 .logo-div {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .integrations-logos .row-1 .logo-div img,
+  .integrations-logos .row-2 .logo-div img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .integrations-logos {
+    padding: 24px 28px 23px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    gap: 39px;
+  }
+  .integrations-logos .row-1,
+  .integrations-logos .row-2 {
+    gap: 39px;
+  }
+  .integrations-logos .row-1 .logo-div,
+  .integrations-logos .row-2 .logo-div {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .integrations-logos .row-1 .logo-div img,
+  .integrations-logos .row-2 .logo-div img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .integrations-logos {
+    padding: 25px 28px 24px 29px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    -moz-column-gap: 38.99px;
+         column-gap: 38.99px;
+  }
+  .integrations-logos .row-1,
+  .integrations-logos .row-2 {
+    gap: 39px;
+  }
+  .integrations-logos .row-1 .logo-div,
+  .integrations-logos .row-2 .logo-div {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .integrations-logos .row-1 .logo-div img,
+  .integrations-logos .row-2 .logo-div img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=integrations-section.css.map */

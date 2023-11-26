@@ -1,0 +1,93 @@
+.content {
+  background: #F6F7FA;
+  width: 78%;
+  height: 100vh;
+  padding: 30px 42px 0px 31px;
+
+}
+
+.content .heading {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.content .heading .title {
+  font-size: 26px;
+}
+
+.content .c-btn-comp {
+  margin-top: 20px;
+  gap: 8px;
+  margin-bottom: 36px;
+  padding-left: 0;
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
+}
+
+.content .c-btn-comp .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.content .c-btn-comp .name {
+  color: rgba(0, 120, 212, 0.90);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.content .table {
+  --bs-table-bg: #F6F7FA;
+}
+
+.content .table-responsiv .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content .table-responsiv .dropdown-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.content .table-responsiv .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 160px;
+  padding: var(--Small, 2px) 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.content .table-responsiv .dropdown-content a {
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.content .table-responsiv .dropdown-content a:hover {
+  background-color: #C7E0F4;
+}
+
+.content .table tbody {
+  --bs-table-color: #888;
+}
+
+.content td:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content td:last-child img {
+  width: 18px;
+  height: 18px;
+}

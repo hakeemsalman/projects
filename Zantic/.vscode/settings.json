@@ -1,0 +1,14 @@
+{
+  "livePreview.defaultPreviewPath": "/index.html",
+  "files.autoSaveDelay": 1,
+  "editor.tabSize": 2,
+  "liveSassCompile.settings.formats": [
+
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "assets/dist/css",
+        "savePathReplacementPairs": null
+    }
+],
+}

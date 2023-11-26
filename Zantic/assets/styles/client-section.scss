@@ -1,0 +1,50 @@
+@import "./variables";
+@import "./mixins";
+
+.client-section {
+  @include flex(flex-start, center, 0px, column, wrap);
+  min-width: $minWidth;
+  width: 100%;
+  padding: 16px 112px;
+  max-width: $maxWidth;
+  margin: 0px auto;
+
+  @include media-lg {
+    margin: -12px auto 16px;
+    margin-top: -12px;
+    padding: 0px 40px;
+
+    div.flex {
+      padding: 0px;
+    }
+  }
+
+  @include media-md {
+    margin: -12px auto 16px;
+    margin-top: -12px;
+    padding: 0px 40px;
+
+    div.flex {
+      padding: 0px;
+    }
+  }
+
+  @include media-sm {
+    padding: 16px 20px;
+  }
+}
+
+.clients-div {
+  @include flex(center, center, 0px, row, wrap);
+  row-gap: 32px;
+  column-gap: 64px;
+  margin: 24px auto;
+  padding: 16px 0px;
+}
+
+.divider {
+  display: inline;
+  width: 100%;
+  height: 1px;
+  background-color: $neutral-200;
+}

@@ -1,0 +1,109 @@
+@import "./variables";
+
+@mixin flex($alignItems, $justify, $gap, $direction, $wrap) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justify;
+  gap: $gap;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin grid($row, $column, $gap){
+  display: grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+  grid-gap: $gap;
+}
+
+@mixin position($position, $index) {
+  position: $position;
+  z-index: $index;
+}
+
+@mixin summaryPhoneOne($leftSide) {
+  .phone-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: $leftSide;
+    position: relative;
+
+    img:first-child {
+      z-index: 2;
+      position: relative;
+    }
+    img:last-child {
+      top: -0.5px;
+      position: absolute;
+    }
+  }
+}
+
+@mixin summaryPhoneTwo($marginTop, $rightSide) {
+  .phone-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $marginTop;
+    right: $rightSide;
+    position: relative;
+
+    img:first-child {
+      z-index: 2;
+      position: relative;
+    }
+    img:last-child {
+      top: 14px;
+      position: absolute;
+    }
+  }
+}
+
+@mixin custom-media-up($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin custom-media-down($value) {
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media screen and (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+
+@mixin media-gt-lg {
+  @media screen and (min-width: #{$screen-lg-max}) {
+    @content;
+  }
+}

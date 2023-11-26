@@ -1,0 +1,170 @@
+.modal .modal-content {
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+
+.modal .modal-body {
+  padding: 0;
+}
+
+.modal .form-section {
+  display: flex;
+  height: 634px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.modal .create-section {
+  max-width: 40%;
+  width: 100%;
+  padding: 30px 0px;
+  flex-shrink: 1;
+  align-self: stretch;
+  background: #F0F0F0;
+}
+
+.modal .info-section {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.modal .title-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+
+.modal input[type="checkbox"] {
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 2px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked {
+  border: none;
+  background-image: url('../../images/checkBoxFill.svg');
+}
+
+
+.modal .title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.modal .description {
+  line-height: 24px;
+  /* 150% */
+  opacity: 0.6;
+  margin: 0;
+}
+
+.modal .tab-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-left: -30px;
+}
+
+.modal .tab-section .side-link {
+
+  color: #A19F9D;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px 0px 10px 30px;
+  border: none;
+  gap: 8px;
+}
+
+.modal .tab-section .side-link.c-active {
+  padding: 10px 0px 10px 26px;
+  opacity: 1;
+  border-left: 3px solid #007EDF;
+  color: #007EDF;
+}
+
+.modal .tab-section .side-link.hide {
+  display: none;
+}
+
+.modal .save-section {
+  margin-left: -16px;
+  display: flex;
+  /* height: 50px; */
+  padding: 0px 30px;
+  align-items: flex-end;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.modal .create-btn {
+  display: flex;
+  padding: 6px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: var(--grey-palette-black, #000);
+  text-align: center;
+
+  /* SegoeUI Semibold / 18 - ms-fontSize-18 FontSizes.size18 */
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.modal .cancel-btn {
+  display: flex;
+  padding: 6px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: var(--grey-palette-grey-190, #201F1E);
+  text-align: center;
+
+  /* SegoeUI Regular / 18 - ms-fontSize-18 FontSizes.size18 */
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.modal .tab-content-section {
+  display: flex;
+  padding: 30px 24px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow-y: scroll;
+}
