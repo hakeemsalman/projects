@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "image": "https://picsum.photos/140/140?random=1",
+      "location_name": "Central Park",
+      "address": "New York, NY, USA"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=2",
+      "location_name": "Eiffel Tower",
+      "address": "Paris, France"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=3",
+      "location_name": "Colosseum",
+      "address": "Rome, Italy"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=4",
+      "location_name": "Great Wall of China",
+      "address": "Huairou, China"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=5",
+      "location_name": "Sydney Opera House",
+      "address": "Sydney, Australia"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=6",
+      "location_name": "Machu Picchu",
+      "address": "Cusco Region, Peru"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=7",
+      "location_name": "Statue of Liberty",
+      "address": "New York, NY, USA"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=8",
+      "location_name": "Taj Mahal",
+      "address": "Agra, India"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=9",
+      "location_name": "Santorini",
+      "address": "Greece"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=10",
+      "location_name": "Golden Gate Bridge",
+      "address": "San Francisco, CA, USA"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=11",
+      "location_name": "Christ the Redeemer",
+      "address": "Rio de Janeiro, Brazil"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=12",
+      "location_name": "Big Ben",
+      "address": "London, England"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=13",
+      "location_name": "Mount Fuji",
+      "address": "Honshu Island, Japan"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=14",
+      "location_name": "Pyramids of Giza",
+      "address": "Giza, Egypt"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=15",
+      "location_name": "Niagara Falls",
+      "address": "Ontario, Canada"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=16",
+      "location_name": "Chichen Itza",
+      "address": "Yucatán, Mexico"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=17",
+      "location_name": "Petra",
+      "address": "Ma'an, Jordan"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=18",
+      "location_name": "Grand Canyon",
+      "address": "Arizona, USA"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=19",
+      "location_name": "Burj Khalifa",
+      "address": "Dubai, UAE"
+    },
+    {
+      "image": "https://picsum.photos/140/140?random=20",
+      "location_name": "Angkor Wat",
+      "address": "Siem Reap, Cambodia"
+    }
+  ]
+}
